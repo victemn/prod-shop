@@ -71,44 +71,43 @@ const Home = () => {
 
     return (
         <Box sx={{marginLeft:'20rem'}}>
-            {/*<h2 className='home-text'>Welcome to Home Page!</h2>*/}
-            {/*<div className='home-video'>*/}
-            {/*    <img className='home-image' src={homeImg} alt=""/>*/}
-            {/*    <video*/}
-            {/*        ref={videoRef1}*/}
-            {/*        src={videoFile1}*/}
-            {/*        className={`video-top-left video-small ${isPlaying.video1 ? "playing" : ""}`}*/}
-            {/*        muted*/}
-            {/*        onMouseEnter={() => handleMouseEnter(videoRef1, "video1")}*/}
-            {/*        onMouseLeave={() => handleMouseLeave(videoRef1, "video1")}*/}
-            {/*    ></video>*/}
+            <h2 className='home-text'>Welcome to Home Page!</h2>
+            <div className='home-video'>
+                <img className='home-image' src={homeImg} alt=""/>
+                <video
+                    ref={videoRef1}
+                    src={videoFile1}
+                    className={`video-top-left video-small ${isPlaying.video1 ? "playing" : ""}`}
+                    muted
+                    onMouseEnter={() => handleMouseEnter(videoRef1, "video1")}
+                    onMouseLeave={() => handleMouseLeave(videoRef1, "video1")}
+                ></video>
 
-            {/*    <video*/}
-            {/*        ref={videoRef2}*/}
-            {/*        src={videoFile2}*/}
-            {/*        className={`video-top-right video-small ${isPlaying.video2 ? "playing" : ""}`}*/}
-            {/*        muted*/}
-            {/*        onMouseEnter={() => handleMouseEnter(videoRef2, "video2")}*/}
-            {/*        onMouseLeave={() => handleMouseLeave(videoRef2, "video2")}*/}
-            {/*    ></video>*/}
-            {/*    <video*/}
-            {/*        ref={videoRef3}*/}
-            {/*        src={videoFile3}*/}
-            {/*        className={`video-bottom-left video-small ${isPlaying.video3 ? "playing" : ""}`}*/}
-            {/*        muted*/}
-            {/*        onMouseEnter={() => handleMouseEnter(videoRef3, "video3")}*/}
-            {/*        onMouseLeave={() => handleMouseLeave(videoRef3, "video3")}*/}
-            {/*    ></video>*/}
-            {/*    <video*/}
-            {/*        ref={videoRef4}*/}
-            {/*        src={videoFile4}*/}
-            {/*        className={`video-bottom-right video-small ${isPlaying.video4 ? "playing" : ""}`}*/}
-            {/*        muted*/}
-            {/*        onMouseEnter={() => handleMouseEnter(videoRef4, "video4")}*/}
-            {/*        onMouseLeave={() => handleMouseLeave(videoRef4, "video4")}*/}
-            {/*    ></video>*/}
-            {/*</div>*/}
-            Home component
+                <video
+                    ref={videoRef2}
+                    src={videoFile2}
+                    className={`video-top-right video-small ${isPlaying.video2 ? "playing" : ""}`}
+                    muted
+                    onMouseEnter={() => handleMouseEnter(videoRef2, "video2")}
+                    onMouseLeave={() => handleMouseLeave(videoRef2, "video2")}
+                ></video>
+                <video
+                    ref={videoRef3}
+                    src={videoFile3}
+                    className={`video-bottom-left video-small ${isPlaying.video3 ? "playing" : ""}`}
+                    muted
+                    onMouseEnter={() => handleMouseEnter(videoRef3, "video3")}
+                    onMouseLeave={() => handleMouseLeave(videoRef3, "video3")}
+                ></video>
+                <video
+                    ref={videoRef4}
+                    src={videoFile4}
+                    className={`video-bottom-right video-small ${isPlaying.video4 ? "playing" : ""}`}
+                    muted
+                    onMouseEnter={() => handleMouseEnter(videoRef4, "video4")}
+                    onMouseLeave={() => handleMouseLeave(videoRef4, "video4")}
+                ></video>
+            </div>
         </Box>
     );
 };
