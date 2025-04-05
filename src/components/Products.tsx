@@ -1,10 +1,11 @@
+import {Box} from "@mui/material";
 
 
 const Products = () => {
     return (
-        <div>
+        <Box>
            Products Component
-        </div>
+        </Box>
     );
 };
 

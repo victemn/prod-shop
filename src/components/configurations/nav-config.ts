@@ -14,6 +14,7 @@ export const navItems:RouteType[] = [
 ]
 
 export const productsItems:RouteType[] = [
+    {path:Paths.PRODUCTS,title:'Products'},
     {path:Paths.BREAD,title:'Bread'},
     {path:Paths.DAIRY,title:'Dairy'},
     {path:Paths.BACK,title:'BACK TO MENU'},

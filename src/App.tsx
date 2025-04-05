@@ -26,6 +26,7 @@ import {RootState} from "./app/store.ts";
 import {getUser} from "./firebase/fireBaseDbUsers.ts";
 
 
+
 function App() {
     const location = useLocation();
     const [activeNavItem, setActiveNavItem] = useState<Paths>(Paths.HOME);
@@ -105,6 +106,7 @@ function App() {
                            element={<NavigationDeskTop items={productsItems} sub={true} activeNavItem={activeNavItem}
                                                        setActiveNavItem={setActiveNavItem} themeMode={themeMode}
                                                        toggleTheme={toggleTheme}/>}>
+
                         <Route path={Paths.BREAD} element={<Bread/>}/>
                         <Route path={Paths.DAIRY} element={<Dairy/>}/>
                         <Route path={Paths.BACK} element={<Navigate to={Paths.HOME}/>}/>
